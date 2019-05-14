@@ -1,6 +1,20 @@
 var {createServer} = require("http");
 var Router = require("./router");
-var ecstatic = require("ecstatic");
+//var ecstatic = require("ecstatic");
+'use strict';
+
+var http = require('http');
+
+var ecstatic = require('../lib/ecstatic')({
+  root: `${__dirname}/public`,
+  showDir: true,
+  autoIndex: true,
+});
+
+http.createServer(ecstatic).listen(8080);
+
+console.log('Listening on :8080');
+//add this section between comments
 
 var router = new Router();
 var defaultHeaders = {"Content-Type": "text/plain"};
