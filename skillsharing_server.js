@@ -5,7 +5,7 @@ var Router = require("./router");
 
 //var http = require('http');
 
-var ecstatic = require('ecstatic/lib/ecstatic')({
+var ecstatic = require('../lib/ecstatic')({
   root: `/public`,
   showDir: true,
   autoIndex: true,
