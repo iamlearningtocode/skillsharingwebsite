@@ -1,15 +1,15 @@
 var {createServer} = require("http");
 var Router = require("./router");
-//var ecstatic = require("ecstatic");
+var ecstatic = require("../lib/ecstatic");
 //'use strict';
 
 //var http = require('http');
 
-var ecstatic = require('../lib/ecstatic')({
-  root: `/public`,
-  showDir: true,
-  autoIndex: true,
-});
+//var ecstatic = require('../lib/ecstatic')({
+  //root: `/public`,
+  //showDir: true,
+  //autoIndex: true,
+//});
 
 //http.createServer(ecstatic).listen(8080);
 
