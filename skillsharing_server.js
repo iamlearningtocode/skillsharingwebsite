@@ -6,14 +6,14 @@ var Router = require("./router");
 var http = require('http');
 
 var ecstatic = require('ecstatic/lib/ecstatic')({
-  root: `${__dirname}/public`,
+  root: `/public`,
   showDir: true,
   autoIndex: true,
 });
 
-http.createServer(ecstatic).listen(8080);
+//http.createServer(ecstatic).listen(8080);
 
-console.log('Listening on :8080');
+//console.log('Listening on :8080');
 //add this section between comments
 
 var router = new Router();
