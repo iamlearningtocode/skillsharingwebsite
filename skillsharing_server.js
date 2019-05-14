@@ -1,9 +1,9 @@
 var {createServer} = require("http");
 var Router = require("./router");
 //var ecstatic = require("ecstatic");
-'use strict';
+//'use strict';
 
-var http = require('http');
+//var http = require('http');
 
 var ecstatic = require('ecstatic/lib/ecstatic')({
   root: `/public`,
